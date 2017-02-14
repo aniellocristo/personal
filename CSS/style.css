@@ -1,0 +1,131 @@
+/*UNIVERSAL STYLES*/
+p {
+  font-family: 'Nunito', sans-serif;
+}
+
+.container-wrap {
+  max-width: 2000px;
+  margin: 0 auto;
+}
+
+/*FEATURE SYTLES*/
+.feature {
+  position: relative;
+}
+
+.header {
+  font-family: 'Oswald', sans-serif;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  border: solid 1px rgb(255, 255, 255);
+  padding: 8px 16px;
+  margin: -10px;
+}
+
+.sub-title {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.container-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.img-1 {
+  width: 100%;
+}
+
+.arrow {
+  width: 50px;
+  height: auto;
+  position: absolute;
+  animation-name: bouncy;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  display: none;
+}
+
+/*PORTFOLIO STYLE*/
+.container-portfolio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio {
+  width: 150px;
+  padding-top: 50px;
+  align-self: center;
+}
+
+.text-1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.text-2 {
+  text-align: center;
+}
+
+.link-line {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.right-arrow {
+  width: 10px;
+  margin-left: 5px;
+}
+
+/*MEDIA QUERIES*/
+@media (min-width: 700px) {
+  .header {
+    font-size: 50px;
+    border: solid 3px rgb(255, 255, 255);
+    margin: -20px;
+  }
+
+  .sub-title {
+    font-size: 24px;
+  }
+
+  .arrow {
+    display: block;
+    top: 80%;
+  }
+
+}
+
+
+@media (min-width: 1000px) {
+  .header {
+    font-size: 80px;
+    margin: -30px;
+  }
+
+  .sub-title {
+    font-size: 36px;
+  }
+
+  .arrow {
+    display: block;
+    top: 85%;
+  }
+}
+
+/*ARROW ANIMATION*/
+@keyframes bouncy  {
+    from{ transform: translateY(0)}
+    to{ transform: translateY(20px)}
+}
