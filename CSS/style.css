@@ -56,9 +56,11 @@ p {
 
 /*PORTFOLIO STYLE*/
 .container-portfolio {
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 }
 
 .portfolio {
@@ -74,13 +76,14 @@ p {
 }
 
 .text-2 {
-  text-align: center;
+  margin: 0 auto;
 }
 
 .link-line {
   display: flex;
-  flex-direction: row;
   align-items: center;
+  margin: 0 auto;
+  width: 150px;
 }
 
 .right-arrow {
@@ -90,6 +93,7 @@ p {
 
 /*MEDIA QUERIES*/
 @media (min-width: 700px) {
+  /*FEATURE SYTLES*/
   .header {
     font-size: 50px;
     border: solid 3px rgb(255, 255, 255);
@@ -105,10 +109,36 @@ p {
     top: 80%;
   }
 
+  /*PORTFOLIO STYLE*/
+  .container-portfolio {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .portfolio {
+    padding: 80px 0px;
+    width: 250px;
+  }
+
+  .link-line {
+    margin: 0;
+  }
+
+  .text-1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+
+  .text-2 {
+    font-size: 20px;
+    margin: 0 auto;
+  }
 }
 
 
 @media (min-width: 1000px) {
+  /*FEATURE SYTLES*/
   .header {
     font-size: 80px;
     margin: -30px;
@@ -125,6 +155,8 @@ p {
 }
 
 /*ARROW ANIMATION*/
+
+/*HEADER ARROW*/
 @keyframes bouncy  {
     from{ transform: translateY(0)}
     to{ transform: translateY(20px)}
