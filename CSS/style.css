@@ -1,12 +1,21 @@
 /*UNIVERSAL STYLES*/
 p {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Oswald', sans-serif;
 }
 
 .container-wrap {
   max-width: 2000px;
   margin: 0 auto;
 }
+
+.dkblue-background {
+  background-color: rgb(71, 77, 93);
+}
+
+.clearfix {
+  overflow: auto;
+}
+
 
 /*FEATURE SYTLES*/
 .feature {
@@ -54,54 +63,172 @@ p {
   display: none;
 }
 
-/*PORTFOLIO STYLE*/
-.container-portfolio {
-  max-width: 800px;
+/*HEADLINE STYLES*/
+.headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.h-grey {
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: rgb(104, 104, 104);
+}
+
+.h-ltblue-box {
+  padding: 5px 8px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(137, 139, 150);
+  border-radius: 5px;
+}
+
+.h-white {
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+/*PROCESS STYLE*/
+.section-container {
+  margin: 0 auto;
+  padding-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0 auto;
 }
 
-.portfolio {
-  width: 150px;
-  padding-top: 50px;
-  align-self: center;
+.accordion {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
 }
 
-.text-1 {
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 0px;
+.panel {
+  display: none;
 }
 
-.text-2 {
-  margin: 0 auto;
-}
-
-.link-line {
+.process-content {
   display: flex;
-  align-items: center;
-  margin: 0 auto;
-  width: 150px;
+  justify-content: center;
 }
 
-.right-arrow {
-  width: 10px;
-  margin-left: 5px;
+.step-call {
+  font-size: 10px;
+  padding: 10px 15px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(71, 77, 93);
+}
+
+.step-call-hide {
+  font-size: 10px;
+  padding: 10px 16px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(71, 77, 93);
+  display: none;
+}
+
+.step-name {
+  width: 175px;
+  font-size: 10px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(204, 204, 204);
+}
+
+.step-img {
+  width: 80%;
+  height: 80%;
+}
+
+/*PORTFOLIO STYLE*/
+
+.img-4 {
+  background-image: url("../images/002.jpg");
+}
+
+.h-white-box {
+  padding: 5px 8px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+
+.img-grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 675px;
+  justify-content: space-around;
+}
+
+.temp {
+  width: 300px;
+  height: 200px;
+  background: grey;
+  margin: 1em;
+}
+
+/*RESUME STYLE*/
+.statement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.resume-topic {
+  text-align: center;
+  width: 50%;
+  padding: 2px;
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+
+.normal-text {
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  font-size: 12px;
+  margin: 5px 0px 20px;
+}
+
+.job-name {
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  font-size: 14px;
+  align-self: flex-start;
+  margin: 0px;
 }
 
 /*MEDIA QUERIES*/
 @media (min-width: 700px) {
+
+  .img-4 {
+    background-size: 100%;
+  }
+
   /*FEATURE SYTLES*/
   .header {
-    font-size: 50px;
+    font-size: 80px;
     border: solid 3px rgb(255, 255, 255);
     margin: -20px;
   }
 
   .sub-title {
-    font-size: 24px;
+    font-size: 30px;
   }
 
   .arrow {
@@ -109,49 +236,82 @@ p {
     top: 80%;
   }
 
-  /*PORTFOLIO STYLE*/
-  .container-portfolio {
-    flex-direction: row;
-    justify-content: space-around;
+  /*HEADLINE STYLES*/
+  .h-grey {
+    font-size: 30px;
   }
 
-  .portfolio {
-    padding: 80px 0px;
-    width: 250px;
+  .h-ltblue-box {
+    font-size: 30px;
   }
 
-  .link-line {
-    margin: 0;
+  .h-white {
+    font-size: 30px;
   }
 
-  .text-1 {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 0px;
+  .h-white-box {
+    font-size: 30px;
   }
 
-  .text-2 {
+  /*PROCESS STYLE*/
+  .step-call {
     font-size: 20px;
-    margin: 0 auto;
   }
-}
 
+  .step-call-hide {
+    font-size: 20px;
+    padding: 10px 17.5px;
+  }
+
+  .step-name {
+    font-size: 20px;
+    width: 350px;
+  }
+
+  /*PORTFOLIO STYLE*/
+
+  .img-grid {
+    flex-direction: row;
+  }
 
 @media (min-width: 1000px) {
   /*FEATURE SYTLES*/
   .header {
-    font-size: 80px;
+    font-size: 100px;
     margin: -30px;
   }
 
   .sub-title {
-    font-size: 36px;
+    font-size: 40px;
   }
 
   .arrow {
     display: block;
     top: 85%;
   }
+
+  /*HEADLINE STYLES*/
+  .h-grey {
+    font-size: 35px;
+  }
+
+  .h-ltblue-box {
+    font-size: 35px;
+  }
+
+  .h-white {
+    font-size: 35px;
+  }
+
+  .h-white-box {
+    font-size: 35px;
+  }
+
+  /*PORTFOLIO STYLES*/
+  .img-grid {
+    max-width: 1000px;
+  }
+
 }
 
 /*ARROW ANIMATION*/
