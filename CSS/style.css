@@ -4,6 +4,7 @@ p {
 }
 
 .container-wrap {
+  width: 100%;
   max-width: 2000px;
   margin: 0 auto;
 }
@@ -49,11 +50,9 @@ p {
 }
 
 .arrow {
-  top: 80%;
   width: 50px;
   height: auto;
-  position: absolute;
-  margin: 0 auto;
+  align-self: center;
   animation-name: bouncy;
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -172,8 +171,8 @@ p {
 }
 
 .port-img {
-  width: 300px;
-  height: 200px;
+  width: 275px;
+  height: 175px;
   background: grey;
   margin: 1em;
 }
@@ -568,6 +567,11 @@ p {
     flex-direction: row;
   }
 
+  .port-img {
+    width: 300px;
+    height: 200px;
+  }
+
   /*RESUME STYLE*/
   .resume-topic {
     font-size: 24px;
@@ -595,11 +599,6 @@ p {
 
   .sub-title {
     font-size: 40px;
-  }
-
-  .arrow {
-    display: block;
-    top: 85%;
   }
 
   /*HEADLINE STYLES*/
