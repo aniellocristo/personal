@@ -12,6 +12,11 @@ p {
   background-color: rgb(71, 77, 93);
 }
 
+.parallax-window {
+    margin-top: 0px;
+    min-height: 100vh;
+    background: transparent;
+}
 
 /*FEATURE SYTLES*/
 .feature {
@@ -43,11 +48,8 @@ p {
   flex-direction: column;
 }
 
-.img-1 {
-  width: 100%;
-}
-
 .arrow {
+  top: 80%;
   width: 50px;
   height: auto;
   position: absolute;
@@ -56,7 +58,6 @@ p {
   animation-fill-mode: both;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  display: none;
 }
 
 /*HEADLINE STYLES*/
@@ -114,7 +115,12 @@ p {
 
 .process-content {
   display: flex;
+  text-align: justify;
+  margin: 0 auto;
   justify-content: center;
+  max-width: 60%;
+  font-size: 15px;
+  padding-bottom: 20px;
 }
 
 .step-call {
@@ -146,11 +152,6 @@ p {
 }
 
 /*PORTFOLIO STYLE*/
-
-.img-4 {
-  background-image: url("../images/002.jpg");
-  background-size: 100%;
-}
 
 .h-white-box {
   padding: 5px 8px;
@@ -525,11 +526,6 @@ p {
     font-size: 30px;
   }
 
-  .arrow {
-    display: block;
-    top: 80%;
-  }
-
   /*HEADLINE STYLES*/
   .h-grey {
     font-size: 30px;
@@ -562,6 +558,9 @@ p {
     width: 350px;
   }
 
+  .process-content {
+    font-size: 20px;
+  }
   /*PORTFOLIO STYLE*/
 
   .img-grid {
@@ -570,12 +569,12 @@ p {
 
   /*RESUME STYLE*/
   .resume-topic {
-    font-size: 30px;
+    font-size: 24px;
 
   }
 
   .normal-text {
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 50px;
 
   }

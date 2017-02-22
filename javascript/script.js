@@ -26,4 +26,8 @@ $(document).ready(function(){
       }
   }
 
+// PARALLAX SCROLL
+  $('#window-1').parallax({imageSrc: './images/001.jpg'});
+  $('#window-2').parallax({imageSrc: './images/002.jpg'});
+
 });
