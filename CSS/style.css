@@ -118,7 +118,7 @@ p {
   text-align: justify;
   margin: 0 auto;
   justify-content: center;
-  max-width: 80%;
+  max-width: 90%;
   font-size: 15px;
   padding-bottom: 20px;
 }
@@ -565,6 +565,7 @@ p {
 
   .process-content {
     font-size: 20px;
+    max-width: 75%;
   }
   /*PORTFOLIO STYLE*/
 
