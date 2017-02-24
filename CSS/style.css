@@ -175,6 +175,7 @@ p {
   height: 175px;
   background: grey;
   margin: 1em;
+  align-self: center;
 }
 
 .img-responsive {
