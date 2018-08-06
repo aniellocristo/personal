@@ -29,3 +29,30 @@ $(document).ready(function(){
 // PARALLAX SCROLL
   $('#window-1').parallax({imageSrc: './images/001.jpg'});
 });
+
+
+//NAVIGATION SCROLL
+
+$(window).scroll(function() {
+
+	if ($(window).scrollTop() > 150 ){
+
+      $(".nav-head").stop().animate({opacity: 1, height: "50px"}, 400);
+      $(".logo").stop().animate({"font-size": "20px"}, 400);
+
+ 	// 	$('nav ul').addClass('nav-show');
+
+  } else {
+
+      $(".nav-head").stop().animate({opacity: .5, height: "70px"}, 400);
+      $(".logo").stop().animate({"font-size": "26px"}, 400);
+ 	};
+});
+
+$('.scroll').on('click', function(e){
+		e.preventDefault()
+
+  $('html, body').animate({
+      scrollTop : $(this.hash).offset().top
+    }, 1500);
+});

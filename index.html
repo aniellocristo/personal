@@ -5,19 +5,37 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="http://www.aniellocristo.com/images/imagepreview.png"/>
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,400" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <script type="text/javascript" src="javascript/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="javascript/script.js"></script>
     <script type="text/javascript" src="javascript/script-bar.js"></script>
     <script type="text/javascript" src="javascript/parallax.js"></script>
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <title>Aniello Cristo</title>
   </head>
   <body>
     <div class="container-wrap">
-      <div class="feature">
+
+
+  <div class="nav-head">
+      <p class="logo"><a href="#feature">ANIELLO CRISTO</a></p>
+
+      <nav>
+        <ul>
+          <li><a href="#process-block">Process</a></li>
+          <li><a href="#portfolio-block">Portfolio</a></li>
+          <li><a href="#resume-section">Resume</a></li>
+          <li><a href="#contact-container">Contact</a></li>
+        </ul>
+      </nav>
+      </div>
+
+
+      <div id="feature">
         <div class="container-1">
           <p class="header">ANIELLO CRISTO</p>
           <p class="sub-title">-Developer & UX Designer-</p>
@@ -29,9 +47,9 @@
       </div>
 
       <!-- PROCESS -->
-      <div class="section-container">
+      <div class="section-container" id="process-block">
         <div class="headline">
-          <h3 class="h-grey">&#151 THOUGHT&nbsp</h3><h3 class="h-ltblue-box">PROCESS</h3><h3 class="h-grey">&nbsp&#151</h3>
+          <h3 class="sub-head">{ PROCESS }</h3>
         </div>
         <div id="process" class="clearfix">
 
@@ -52,32 +70,25 @@
           </div>
 
           <div class="accordion">
-              <h3 class="step-call">+</h3><h3 class="step-call-hide">-</h3><h3 class="step-name">RED ROUTE ANALYSIS</h3>
+              <h3 class="step-call">+</h3><h3 class="step-call-hide">-</h3><h3 class="step-name">ROUTE ANALYSIS</h3>
           </div>
           <div class="panel">
-            <p class="process-content"><img class="step-img" src="images/red.svg" alt="Process Chart"></p>
+            <p class="process-content"><img class="step-img" src="images/blue.svg" alt="Process Chart"></p>
           </div>
 
           <div class="accordion">
               <h3 class="step-call">+</h3><h3 class="step-call-hide">-</h3><h3 class="step-name">ORGANIZE WITH FLOW CHART</h3>
           </div>
           <div class="panel">
-            <p class="process-content"><img class="step-img" src="images/process1.png" alt="Process Chart"></p>
+            <p class="process-content"><img class="step-img" src="images/workflow.svg" alt="Workflow Chart"></p>
           </div>
 
           <div class="accordion">
               <h3 class="step-call">+</h3><h3 class="step-call-hide">-</h3><h3 class="step-name">MOCK UP WIRE FRAMES</h3>
           </div>
           <div class="panel">
-            <p class="process-content"> Lorem ipsum...</p>
+            <p class="process-content"><img class="step-img" src="images/wireframe.svg" alt="Process Wireframs"></p>
           </div>
-
-            <div class="accordion">
-                <h3 class="step-call">+</h3><h3 class="step-call-hide">-</h3><h3 class="step-name">HIGH FIDELITY RENDERINGS</h3>
-            </div>
-            <div class="panel">
-              <p class="process-content"> Lorem ipsum...</p>
-            </div>
 
             </div>
           </div>
@@ -85,9 +96,9 @@
 
       <!-- PORTFOLIO -->
       <div class="dkblue-background">
-        <div class="section-container">
+        <div class="section-container" id="portfolio-block">
           <div class="headline">
-            <h3 class="h-white">&#151 WORK&nbsp</h3><h3 class="h-ltblue-box">PORTFOLIO</h3><h3 class="h-white">&nbsp&#151</h3>
+            <h3 class="sub-head-w">{ PORTFOLIO }</h3>
           </div>
           <div class="img-grid">
 
@@ -170,52 +181,45 @@
       </div>
 
       <!-- RESUME -->
-      <div class="resume-section">
+      <div id="resume-section">
         <div class="headline">
-          <h3 class="h-white">&#151 ANIELLO&nbsp</h3><h3 class="h-white-box">RESUME</h3><h3 class="h-white">&nbsp&#151</h3>
+          <h3 class="sub-head">{ RESUME }</h3>
         </div>
 
         <div class="topic-grid">
 
-
-            <div class="standalone">
-                <div class="button-container-linkedin">
-                  <div class="topic-button">
-                    <img class="linkin-img" src="images/linkin-white.svg" alt="LinkedIN icon image">
+                  <div class="button-container">
+                      <div class="topic-button">
+                        <img class="resume-img" src="images/in-ltpurple.svg" alt="LinkedIN icon image">
+                      </div>
+                      <div class="topic-hover">
+                        <a href="https://www.linkedin.com/in/aniellocristo/" target="blank"><img class="resume-img" src="images/in-orange.svg" alt="LinkedIN hover icon image"></a>
+                      </div>
                   </div>
-                  <div class="topic-hover">
-                    <a href="https://www.linkedin.com/in/aniellocristo/" target="blank"><img class="linkin-img" src="images/linkin-orange.svg" alt="LinkedIN hover icon image"></a>
+
+                  <div class="button-container">
+                      <div class="topic-button">
+                        <img class="resume-img" src="images/pdf-ltpurple.svg" alt="PDF icon image">
+                      </div>
+                      <div class="topic-hover">
+                        <a href="files/cristo_resume.pdf" download><img class="resume-img" src="images/pdf-orange.svg" alt="PDF hover icon image"></a>
+                      </div>
                   </div>
-                </div>
-            </div>
 
-            <div class="doc-row">
-                <div class="button-container-doc">
-                  <div class="topic-button">
-                    <img class="doc-img" src="images/pdf-white.svg" alt="PDF icon image">
+                  <div class="button-container">
+                      <div class="topic-button">
+                        <img class="resume-img" src="images/doc-ltpurple.svg" alt="DOC icon image">
+                      </div>
+                      <div class="topic-hover">
+                        <a href="files/cristo_resume.docx" download><img class="resume-img" src="images/doc-orange.svg" alt="DOC hover icon image">
+                      </div></a>
                   </div>
-                  <div class="topic-hover">
-                    <a href="files/cristo_resume.pdf" download><img class="doc-img" src="images/pdf-orange.svg" alt="PDF hover icon image"></a>
-                  </div>
-                </div>
 
-                <div class="button-container-doc">
-                  <div class="topic-button">
-                    <img class="doc-img" src="images/doc-white.svg" alt="DOC icon image">
-                  </div>
-                  <div class="topic-hover">
-                    <a href="files/cristo_resume.docx" download><img class="doc-img" src="images/doc-orange.svg" alt="DOC hover icon image">
-                  </div></a>
-                </div>
-            </div>
+          </div>
 
-
-
-        </div>
 
 
           <div class="task-statement">
-                <h3 class="resume-topic">SKILLS</h3>
 
                   <div class="skill-contain">
                   <div class="bar">
@@ -313,9 +317,65 @@
                 </div>
           </div>
         </div>
-
     </div>
 
+
+    <div id="contact-container">
+
+      <div class="headline">
+        <h3 class="sub-head-w">{ CONTACT }</h3>
+      </div>
+
+    <div class="contact-subshell">
+
+    <div class="contact-batch">
+      <img class="illinois-img" src="images/illinois.svg" alt="Map of Illinois">
+    </div>
+
+    <div class="contact-batch">
+
+      <div class="icon-container">
+          <div class="button-container-soc">
+            <div class="topic-button">
+              <img class="soc-icon" src="images/mail-purple.svg" alt=" icon image">
+            </div>
+            <div class="topic-hover">
+              <a href="mailto:aniello@aniellocristo.com"><img class="soc-icon" src="images/mail-orange.svg" alt="Email Logo">
+            </div></a>
+          </div>
+
+          <div class="button-container-soc">
+            <div class="topic-button">
+              <img class="soc-icon" src="images/linkin-purple.svg" alt=" icon image">
+            </div>
+            <div class="topic-hover">
+              <a href="https://www.linkedin.com/in/aniellocristo/" target="blank"><img class="soc-icon" src="images/linkin-orange.svg" alt="LinkedIN Logo">
+            </div></a>
+          </div>
+
+          <div class="button-container-soc">
+            <div class="topic-button">
+              <img class="soc-icon" src="images/github-purple.svg" alt=" icon image">
+            </div>
+            <div class="topic-hover">
+              <a href="https://github.com/aniellocristo" target="blank"><img class="soc-icon" src="images/github-orange.svg" alt="Github Logo">
+            </div></a>
+          </div>
+
+          <div class="button-container-soc">
+            <div class="topic-button">
+              <img class="soc-icon" src="images/twitter-purple.svg" alt=" icon image">
+            </div>
+            <div class="topic-hover">
+              <a href="https://twitter.com/AnielloCristo" target="blank"><img class="soc-icon" src="images/twitter-orange.svg" alt="Twitter Logo">
+            </div></a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+    </div>
 
   </div>
 
